@@ -1,6 +1,31 @@
-// Em uma festa, você:
-
-// Seu jeito de lidar com um término é:
+document.addEventListener('DOMContentLoaded', function() {
+    const questions = [
+        {
+            question: "Em uma festa, você...",
+            answers: [
+                { display: "XXX", result: "yours-truly" },
+                { display: "XXX", result: "my-everything" },
+                { display: "XXX", result: "dangerous-woman" },
+                { display: "XXX", result: "sweetener" },
+                { display: "XXX", result: "thank-u-next" },
+                { display: "XXX", result: "positions" },
+                { display: "XXX", result: "eternal-sunshine" }
+            ]
+        },
+        {
+            question: "Seu jeito de lidar com um término de namoro é...",
+            answers: [
+                { display: "XXX", result: "yours-truly" },
+                { display: "XXX", result: "my-everything" },
+                { display: "XXX", result: "dangerous-woman" },
+                { display: "XXX", result: "sweetener" },
+                { display: "XXX", result: "thank-u-next" },
+                { display: "XXX", result: "positions" },
+                { display: "XXX", result: "eternal-sunshine" }
+            ]
+        }
+    ];
+});
 
 // Qual frase combina com você?
 
