@@ -23,26 +23,105 @@ document.addEventListener('DOMContentLoaded', function() {
                 { display: "XXX", result: "positions" },
                 { display: "XXX", result: "eternal-sunshine" }
             ]
-        }
+        },
+        {
+            question: "Qual frase combina com você?",
+            answers: [
+                { display: "XXX", result: "yours-truly" },
+                { display: "XXX", result: "my-everything" },
+                { display: "XXX", result: "dangerous-woman" },
+                { display: "XXX", result: "sweetener" },
+                { display: "XXX", result: "thank-u-next" },
+                { display: "XXX", result: "positions" },
+                { display: "XXX", result: "eternal-sunshine" }
+            ]
+        },
+        {
+            question: "Em um encontro romântico, você prefere:",
+            answers: [
+                { display: "XXX", result: "yours-truly" },
+                { display: "XXX", result: "my-everything" },
+                { display: "XXX", result: "dangerous-woman" },
+                { display: "XXX", result: "sweetener" },
+                { display: "XXX", result: "thank-u-next" },
+                { display: "XXX", result: "positions" },
+                { display: "XXX", result: "eternal-sunshine" }
+            ]
+        },
+        {
+            question: "Como você reage a críticas?",
+            answers: [
+                { display: "XXX", result: "yours-truly" },
+                { display: "XXX", result: "my-everything" },
+                { display: "XXX", result: "dangerous-woman" },
+                { display: "XXX", result: "sweetener" },
+                { display: "XXX", result: "thank-u-next" },
+                { display: "XXX", result: "positions" },
+                { display: "XXX", result: "eternal-sunshine" }
+            ]
+        },
+        {
+            question: "Seu estilo de se vestir é:",
+            answers: [
+                { display: "XXX", result: "yours-truly" },
+                { display: "XXX", result: "my-everything" },
+                { display: "XXX", result: "dangerous-woman" },
+                { display: "XXX", result: "sweetener" },
+                { display: "XXX", result: "thank-u-next" },
+                { display: "XXX", result: "positions" },
+                { display: "XXX", result: "eternal-sunshine" }
+            ]
+        },
+        {
+            question: "O que mais te motiva?",
+            answers: [
+                { display: "XXX", result: "yours-truly" },
+                { display: "XXX", result: "my-everything" },
+                { display: "XXX", result: "dangerous-woman" },
+                { display: "XXX", result: "sweetener" },
+                { display: "XXX", result: "thank-u-next" },
+                { display: "XXX", result: "positions" },
+                { display: "XXX", result: "eternal-sunshine" }
+            ]
+        },
+        {
+            question: "Em conflitos, você:",
+            answers: [
+                { display: "XXX", result: "yours-truly" },
+                { display: "XXX", result: "my-everything" },
+                { display: "XXX", result: "dangerous-woman" },
+                { display: "XXX", result: "sweetener" },
+                { display: "XXX", result: "thank-u-next" },
+                { display: "XXX", result: "positions" },
+                { display: "XXX", result: "eternal-sunshine" }
+            ]
+        },
+        {
+            question: "Qual seu maior medo no amor?",
+            answers: [
+                { display: "XXX", result: "yours-truly" },
+                { display: "XXX", result: "my-everything" },
+                { display: "XXX", result: "dangerous-woman" },
+                { display: "XXX", result: "sweetener" },
+                { display: "XXX", result: "thank-u-next" },
+                { display: "XXX", result: "positions" },
+                { display: "XXX", result: "eternal-sunshine" }
+            ]
+        },
+        {
+            question: "Como você descreveria sua energia em momentos decisivos?",
+            answers: [
+                { display: "XXX", result: "yours-truly" },
+                { display: "XXX", result: "my-everything" },
+                { display: "XXX", result: "dangerous-woman" },
+                { display: "XXX", result: "sweetener" },
+                { display: "XXX", result: "thank-u-next" },
+                { display: "XXX", result: "positions" },
+                { display: "XXX", result: "eternal-sunshine" }
+            ]
+        },
     ];
 });
-
-// Qual frase combina com você?
-
-// Em um encontro romântico, você prefere:
-
-// Como você reage a críticas?
-
-// Seu estilo de se vestir é:
-
-// O que mais te motiva?
-
-// Em conflitos, você:
-
-// Qual seu maior medo no amor?
-
-// Como você descreveria sua energia em momentos decisivos?
-
 
 // Você é o álbum Yours Truly
 // Você é uma alma doce, romântica e cheia de sentimentos profundos.
