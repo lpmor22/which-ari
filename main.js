@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { display: "Gosto de mistério e sedução.", result: "positions" },
                 { display: "A vida é doce se você deixar!", result: "sweetener" },
                 { display: "Minha melhor versão vem depois do caos.", result: "thank-u-next" },
-                { display: "Sou ambiciosa e não tenho medo de brilhar!", result: "my-everything" },
+                { display: "Muita ambição e não tenho medo de brilhar!", result: "my-everything" },
                 { display: "Memórias boas ficam, as ruins viram aprendizado.", result: "eternal-sunshine" },
                 { display: "Não peço permissão para ser eu mesma.", result: "dangerous-woman" }
             ]
