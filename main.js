@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { display: "Gosto de mistério e sedução.", result: "positions" },
                 { display: "A vida é doce se você deixar!", result: "sweetener" },
                 { display: "Minha melhor versão vem depois do caos.", result: "thank-u-next" },
-                { display: "Muita ambição e não tenho medo de brilhar!", result: "my-everything" },
+                { display: "Sou ambiciosa e não tenho medo de brilhar!", result: "my-everything" },
                 { display: "Memórias boas ficam, as ruins viram aprendizado.", result: "eternal-sunshine" },
                 { display: "Não peço permissão para ser eu mesma.", result: "dangerous-woman" }
             ]
@@ -225,10 +225,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const result = results[finalResult];
             
             quizContainer.innerHTML = `
-                <h3>Você é o álbum ${result.title}</h3>
-                <img src="${result.cover}" alt="${result.title}" style="max-width: 300px; border-radius: 10px; margin: 20px 0;">
-                <p>${result.description}</p>
-            `;
+            <h3>Você é o álbum ${result.title}</h3>
+            <img class="result-image" src="${result.cover}" alt="${result.title}">
+            <p>${result.description}</p>
+        `;
             nextButton.style.display = 'none';
         }
     
