@@ -1,8 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const questions = [
-        {
+document.addEventListener('DOMContentLoaded', function() { // o código roda todo dentro do evento e ele executa após o index em HTML carregar
+    const questions = [ // array contendo as perguntas e respostas
+// pergunta como "display" e resultados como "result" para poder bagunçar a ordem das respostas
+        { 
             question: "Em uma festa, você:",
-            answers: [
+            answers: [ 
                 { display: "Ajuda a todos a se divertir!", result: "sweetener" },
                 { display: "Fica com as amigas e dá foras para quem não merece.", result: "thank-u-next" },
                 { display: "Dança até o chão! Gosta de ser o centro das atenções.", result: "my-everything" },
@@ -122,6 +123,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     ];
 
+// os resultados são mostrados a partir do que foi obtido do "result"
+// título, capa do álbum e descrição
     const results = {
         "yours-truly": {
             title: "Yours Truly",
@@ -160,27 +163,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    const quizContainer = document.getElementById('quiz');
-    const nextButton = document.getElementById('next');
-    let currentQuestionIndex = 0;
-    let userAnswers = [];
+    const quizContainer = document.getElementById('quiz'); // modelo quiz
+    const nextButton = document.getElementById('next'); // botão next
+    let currentQuestionIndex = 0; // para controlar como exibe as perguntas
+    let userAnswers = []; // onde armazena as respostas do usuário
     
     function showQuestion(questionIndex) {
-            const question = questions[questionIndex];
+        // inicia o quiz vazio
+        const question = questions[questionIndex];
             quizContainer.innerHTML = '';
-    
+
+            // cria o elemento para as perguntas
             const questionElement = document.createElement('div');
             questionElement.classList.add('question');
             questionElement.textContent = question.question;
             quizContainer.appendChild(questionElement);
-    
+
+            // cria o container para as opções
             const optionsContainer = document.createElement('div');
             optionsContainer.classList.add('options-container');
-            
+
+            // adiciona as opções de resposta
             question.answers.forEach((option, index) => {
                 const optionContainer = document.createElement('div');
                 optionContainer.classList.add('option-container');
                 
+                // para o modo radial das respostas
                 const optionElement = document.createElement('input');
                 optionElement.type = 'radio';
                 optionElement.id = 'option-' + index;
@@ -188,6 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 optionElement.value = option.result;
                 optionElement.addEventListener('change', () => selectAnswer(option.result));
                 
+                //
                 const labelElement = document.createElement('label');
                 labelElement.htmlFor = 'option-' + index;
                 labelElement.textContent = option.display;
@@ -199,6 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
             quizContainer.appendChild(optionsContainer);
     
+            // para os botões de Próxima e Ver Resultados
             if (questionIndex < questions.length - 1) {
                 nextButton.style.display = 'block';
                 nextButton.textContent = 'Próxima';
@@ -211,6 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
             userAnswers[currentQuestionIndex] = answer;
         }
     
+        // avança para a próxima pergunta e mostra no final o resultado
         nextButton.addEventListener('click', () => {
             if (currentQuestionIndex < questions.length - 1) {
                 currentQuestionIndex++;
@@ -220,6 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     
+        // mostrar resultado
         function showResult() {
             const finalResult = calculateResult();
             const result = results[finalResult];
@@ -232,6 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nextButton.style.display = 'none';
         }
     
+        // cálculo dos resultados - frequência das respostas (empate: primeiro resultado)
         function calculateResult() {
             const resultCounts = {};
             userAnswers.forEach(answer => {
