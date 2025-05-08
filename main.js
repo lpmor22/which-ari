@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() { // o código roda todo dentro do evento e ele executa após o index em HTML carregar
+﻿document.addEventListener('DOMContentLoaded', function() { // o código roda todo dentro do evento e ele executa após o index em HTML carregar
     const questions = [ // array contendo as perguntas e respostas
 // pergunta como "display" e resultados como "result" para poder bagunçar a ordem das respostas
         { 
